@@ -24,6 +24,7 @@ export default component$(() => {
           // this it doesnt updating the signal of firstAuthor.value
           firstAuthor.value = quotes[0].author;
 
+          // this is working but only on this scope
           console.log('inside onResolved', firstAuthor.value);
           return (
             <ul>
