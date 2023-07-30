@@ -8,7 +8,7 @@ export default component$(() => {
   useTask$(({ track }) => {
     track(() => firstAuthor.value);
 
-    // This is the problem. firstAuthor.value is empty even I changed below.
+    // This is the problem. firstAuthor.value is empty even when I've changed it below.
     console.log('firstAuthor.value', firstAuthor.value);
   });
   return (
